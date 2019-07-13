@@ -1,0 +1,32 @@
+.search__social-list {
+    display: none;
+}
+.search__store-list {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 320px;
+    display: none;
+}
+.search__store-list--active {
+    display: block;
+}
+.search__store-item {
+    border-top: 1px solid #E4E4E4; 
+    padding: 12px 0 12px 12px;
+}
+.search__store-link {
+    color: $text-color;
+    text-decoration: none;
+}
+.search__store-link-find {
+    padding-left: 20px;
+    background-image: url("../img/svg/icon_search.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.search__store-item-country {
+    background-color: #F7F7F7;
+    padding-left: 47px;
+}

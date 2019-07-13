@@ -1,0 +1,36 @@
+{
+  "name": "nulam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seregamaksim/Nulam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seregamaksim/Nulam/issues"
+  },
+  "homepage": "https://github.com/seregamaksim/Nulam#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "imagemin-webp": "^5.1.0",
+    "node-normalize-scss": "^8.0.0",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {}
+}
