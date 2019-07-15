@@ -1,0 +1,7 @@
+
+@media (min-width: $screen-desktop) {
+    .main-nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,72 @@
+.new-product {
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+}
+.new-product__container {
+    background-image: url("../img/bg-np-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 147px;
+}
+.new-product__image {
+    margin-top: -35px;
+}
+.new-product__description {
+    padding: 5px 14px 20px 14px;
+}
+.new-product__title,
+.new-product__text1,
+.new-product__text2 {
+    margin: 0;
+    padding: 0;
+}
+.new-product__title {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: $main-red;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.new-product__text1 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: $capellini-green;
+    margin-bottom: 5px;
+}
+.new-product__text2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #545454;
+}
+@media (min-width: $screen-desktop) {
+    .new-product {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    .new-product__container {
+        background-image: url("../img/bg-np-desktop.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 288px;
+        width: 508px;
+    }
+    .new-product__description {
+        box-sizing: border-box;
+        padding: 36px 0 32px 50px;
+        max-width: 452px;
+    }
+    .new-product__text1 {
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .new-product__text2 {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}

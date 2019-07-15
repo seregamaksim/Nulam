@@ -1,0 +1,73 @@
+.list-of-merits {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 91.25%;
+    // max-width: 292px;
+    margin: 0 auto;
+}
+.list-of-merits__item {
+    max-width: 81px;
+}
+.list-of-merits__item:first-child {
+    margin-left: 10px;
+}
+.list-of-merits__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    opacity: 0.5;
+    color: $text-color;
+    text-decoration: none;
+}
+.list-of-merits__link--active {
+    opacity: 1;
+    position: relative;
+}
+.list-of-merits__link--purpose-active {
+    color: #fff;
+}
+.list-of-merits__link:hover {
+    opacity: 0.4;
+}
+.list-of-merits__link--active:hover {
+    opacity: 1;
+}
+.list-of-merits__link--purpose-active::before,
+.list-of-merits__link--active::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 4px;
+    height: 32px;
+    background-color: $main-red;
+    border-radius: 12px;
+    left: -10px;
+    top: 3px;
+}
+@media (min-width: $screen-desktop) {
+    .list-of-merits {
+        width: 49.9%;
+        max-width: 520px;
+        margin: 0;
+        margin-right: auto;
+    }
+    .list-of-merits__link {
+        font-size: 20px;
+        line-height: 27px;
+
+    }
+    .list-of-merits__item {
+        max-width: none;
+    }
+    .list-of-merits__link--active::before {
+        content: none;
+    }
+    .list-of-merits__link--purpose-active,
+    .list-of-merits__link--active {
+        border-bottom: 4px solid $main-red;
+    }
+}

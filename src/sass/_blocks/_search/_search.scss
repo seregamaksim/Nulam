@@ -8,6 +8,8 @@
     list-style: none;
     max-width: 320px;
     display: none;
+    font-size: 16px;
+    line-height: 26px;
 }
 .search__store-list--active {
     display: block;
@@ -15,6 +17,9 @@
 .search__store-item {
     border-top: 1px solid #E4E4E4; 
     padding: 12px 0 12px 12px;
+}
+.search__store-item:last-child {
+    border-bottom: 1px solid #E4E4E4;
 }
 .search__store-link {
     color: $text-color;
@@ -29,4 +34,47 @@
 .search__store-item-country {
     background-color: #F7F7F7;
     padding-left: 47px;
+}
+@media (min-width: $screen-desktop) {
+    .search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F7F7;
+        padding: 7px 40px;
+    }
+    .search__social-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .search__store-list {
+        display: flex;
+        width: 27.777%;
+        justify-content: space-between;
+        max-width: none;
+        margin: 0;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .search__store-item {
+        padding: 0;
+        border: none;
+    }
+    .search__store-item:last-child {
+        border: none;
+    }
+    .search__social-item {
+        margin-right: 5px;
+    }
+    .search__social-item:hover {
+        opacity: 0.6;
+    } 
+    .search__store-item-country {
+        background-color: transparent;
+    }
+    .search__store-item:nth-child(4) {
+        order: -1;
+    }
 }

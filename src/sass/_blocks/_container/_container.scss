@@ -1,0 +1,11 @@
+.container {
+    width: 91.25%;
+    max-width: 292px;
+    margin: 0 auto;
+}
+@media (min-width: $screen-desktop) {
+    .container {
+        width: 72.361%;
+        max-width: 1042px;
+    }
+}

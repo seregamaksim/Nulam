@@ -1,0 +1,105 @@
+.food-special-ingred {
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding-bottom: 155px;
+    background-image: url("../img/feed1-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .food-special-ingred {
+        background-image: url("../img/feed1-mobile@2x.png");
+        background-size: 292px, 155px;
+    }
+}
+.food-special-ingred__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 21px;
+}
+.food-special-ingred__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17px;
+    margin-bottom: 20px;
+}
+.food-special-ingred__alternative-logo {
+    width: 134px;
+    height: 35px;
+}
+.food-special-ingred__text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: $text-color;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-width: 264px;
+}
+.food-special-ingred__text span {
+    display: none;
+}
+.food-special-ingred__btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: $main-red;
+    border-radius: 10px;
+    padding: 12px 75px 11px 75px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (min-width: $screen-desktop) {
+    .food-special-ingred {
+        display: flex;
+        padding-bottom: 0;
+        background-image: url("../img/feed1-desktop.png");
+    }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .food-special-ingred {
+            background-image: url("../img/feed1-desktop@2x.png");
+            background-size: 1042px, 264px;
+        }
+    }
+    .food-special-ingred__container {
+        margin-bottom: 0;
+        padding: 46px 0 46px 47px;
+        align-items: flex-start;
+    }
+    .food-special-ingred__text-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
+        position: relative;
+        margin-bottom: 29px;
+    }
+    .food-special-ingred__text span {
+        display: inline;
+    }
+    .food-special-ingred__text {
+        
+        font-size: 40px;
+        line-height: 48px;
+        max-width: 580px;
+        text-indent: 205px;
+    }
+    .food-special-ingred__alternative-logo {
+        width: 230px;
+        height: 60px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+    .food-special-ingred__btn {
+        font-size: 20px;
+        line-height: 27px;
+        padding: 15px 54px 14px 54px;
+    }
+}

@@ -1,10 +1,10 @@
 .menu {
     height: 52px;
-    transition: height 0.5s ease-in;
+    // transition: height 0.5s ease-in;
 }
 .menu--active {
     height: auto;
-    transition: height 0.3s ease-in;
+    // transition: height 0.3s ease-in;
 }
 .menu__container {
     width: 88.475%;
@@ -39,7 +39,7 @@
     left: 0;
     background-color: $text-color;
     border-radius: 12px;
-    transition: transform 0.3s ease-in;
+    // transition: transform 0.3s ease-in;
 }
 .menu__burger span::before,
 .menu__burger span::after {
@@ -53,11 +53,11 @@
 }
 .menu__burger--active span {
     height: 0;
-    transition: height 0.3s ease-in;
+    // transition: height 0.3s ease-in;
 }
 .menu__burger--active span::before,
 .menu__burger--active span::after {
-    transition: transform 0.3s ease-in;
+    // transition: transform 0.3s ease-in;
 }
 .menu__burger--active span::before {
     transform: rotate(-45deg);
@@ -76,8 +76,7 @@
     list-style: none;
     font-size: 16px;
     line-height: 26px;
-    transition: transform 0.3s ease-in, height 0.3s ease-in;
-
+    // transition: transform 0.3s ease-in, height 0.3s ease-in;
 }
 .menu__list {
     border-top: 1px solid #E4E4E4;
@@ -123,4 +122,69 @@
 .menu__link--active {
     font-weight: bold;
     background-image: url("../img/svg/arrow-top.svg");
+}
+
+@media (min-width: $screen-desktop) {
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .menu__container {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        margin-left: 41px;
+    }
+    .menu__burger {
+        display: none;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        height: 100%;
+        transform: none;
+    }
+    .menu__item {
+        margin-right: 16px;
+    }
+    .menu__link-arrow {
+        padding: 0;
+        margin: 0;
+        background-image: none;
+    }
+    .menu__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .menu__item-project,
+    .menu__item-about {
+        position: relative;
+    }
+    .menu__submenu-project,
+    .menu__submenu-about {
+        transform: none;
+        display: none;
+        width: 301px;
+        height: auto;
+        background-color: red;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+    }
+    .menu__submenu--active {
+        margin-top: 0;
+    }
+    .menu__link-project:hover + .menu__submenu-project,
+    .menu__link-about:hover + .menu__submenu-about {
+        display: block;
+        position: absolute;
+        bottom: -115px;
+    }
+    .menu__link--active {
+        font-weight: normal;
+    }
+    .menu__item--active {
+        width: auto;
+        background-color: #fff;
+        padding: 0;
+    }
 }
