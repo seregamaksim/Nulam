@@ -1,5 +1,6 @@
 .quality {
     padding-top: 32px;
+    padding-bottom: 36px;
     background-image: url("../img/bg-quality-mobile.png");
     background-repeat: no-repeat;
     background-position: center top;
@@ -11,6 +12,7 @@
     }
 }
 .quality__list-of-merits {
+    margin-top: 16px;
     margin-bottom: 32px;
 }
 .quality__title,
@@ -47,10 +49,8 @@
 }
 @media (min-width: $screen-desktop) {
     .quality {
-        padding-top: 32px;
         padding-bottom: 52px;
         background-image: url("../img/bg-quality-desktop.png");
-        background-repeat: no-repeat;
         background-position: left top;
     }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

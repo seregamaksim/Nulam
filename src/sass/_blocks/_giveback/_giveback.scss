@@ -1,0 +1,170 @@
+.giveback {
+    background-color: #F7F7F7;
+    padding-top: 24px;
+    padding-bottom: 74px;
+}
+.giveback__title,
+.giveback__text,
+.giveback__plan-list,
+.giveback__wish,
+.giveback__community {
+    margin: 0;
+    padding: 0;
+}
+.giveback__description {
+    padding-top: 28px;
+    padding-bottom: 36px;
+}
+.giveback__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: $main-red;
+    margin-bottom: 12px;
+}
+.giveback__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-color;
+}
+.giveback__plan-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.giveback__plan-item {
+    max-width: 191px;
+    position: relative;
+    padding-left: 68px;
+    margin-bottom: 60px;
+}
+.giveback__plan-item::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 56px, 56px;
+}
+.giveback__plan-item1::before {
+    background-image: url("../img/svg/!.svg");
+    top: -15px;
+}
+.giveback__plan-item1::after {
+    content: url("../img/svg/dot3-mobile.svg");
+    position: absolute;
+    display: inline-block;
+    left: 55px;
+    top: 20px;
+}
+.giveback__plan-item2 {
+    align-self: flex-end;
+}
+.giveback__plan-item2::before {
+    background-image: url("../img/svg/2.svg");
+    top: -10px;
+}
+.giveback__wish,
+.giveback__community {
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+    font-weight: bold;
+}
+.giveback__wish {
+    margin-bottom: 60px;
+}
+.giveback__community {
+    padding-left: 3px;
+    background-image: url("../img/svg/bg-community.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 156px, 12px;
+}
+@media (min-width: $screen-desktop) {
+    .giveback {
+        padding-top: 60px;
+        padding-bottom: 84px;
+    }
+    .giveback__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    .giveback__title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .giveback__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .giveback__description {
+        max-width: 502px;
+        padding-top: 64px;
+        padding-bottom: 0;
+    }
+    .giveback__plan-list {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 60px;
+        width: 500px;
+    }
+    .giveback__wish,
+    .giveback__community {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .giveback__plan-item  {
+        padding-left: 0;
+        margin-bottom: 120px;
+    }
+    .giveback__plan-item1 {
+        padding-left: 103px;
+    }
+    .giveback__plan-item::before {
+        width: 80px;
+        height: 80px;
+        left: 0;
+        background-size: 80px, 80px;
+    }
+    .giveback__plan-item1::before {
+        background-image: url("../img/svg/!.svg");
+        top: -25px;
+    }
+    .giveback__plan-item1::after {
+        content: url("../img/svg/dot3-desktop.svg");
+        left: 60px;
+        top: 60px;
+    }
+    .giveback__plan-item1 {
+        align-self: flex-end;
+    }
+    .giveback__plan-item2 {
+        align-self: flex-start;
+        text-align: right;
+        padding-right: 103px;
+    }
+    .giveback__plan-item2::before {
+        background-image: url("../img/svg/2.svg");
+        left: 213px;
+        top: -10px;
+    }
+    .giveback__container2 {
+        max-width: 271px;
+    }
+    .giveback__community {
+        padding-left: 4px;
+        background-image: url("../img/svg/bg-community.svg");
+        background-repeat: no-repeat;
+        background-position: left 18px;
+        background-size: 177px, 12px;
+    }
+}

@@ -1,0 +1,90 @@
+.examples__title,
+.examples__description {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.examples__project {
+    background-repeat: no-repeat;
+    background-size: 291px, 300px;
+    padding: 24px 14px 19px 14px;
+}
+.examples__project-companion {
+    background-image: url("../img/companion-desktop.png");
+}
+.examples__project-donor {
+    background-image: url("../img/donors.png");
+}
+.examples__project-farmers {
+    background-image: url("../img/farmers.png");
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .examples__project {
+    background-repeat: no-repeat;
+    background-size: 291px, 300px;
+    }
+    .examples__project-companion {
+        background-image: url("../img/companion-desktop@2x.png");
+    }
+    .examples__project-donor {
+        background-image: url("../img/donors@2x.png");
+    }
+    .examples__project-farmers {
+        background-image: url("../img/farmers@2x.png");
+    }
+}
+.examples__title {
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 140px;
+    max-width: 235px;
+}
+.examples__title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: $main-yellow;
+    bottom: -17px;
+    left: 0;
+}
+.examples__description {
+    font-size: 14px;
+    line-height: 21px;
+}
+@media (min-width: $screen-desktop) {
+    .examples {
+        display: flex;
+        justify-content: space-between;
+    }
+    .examples__project {
+        width: 30.9%;
+        background-size: 322px, 332px;
+        padding: 20px 20px 25px 20px;
+        box-sizing: border-box;
+    }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .examples__project {
+        background-size: 322px, 332px;
+        }
+    }
+    .examples__title {
+        font-size: 28px;
+        line-height: 38px;
+        max-width: none;
+        margin-bottom: 133px;
+    }
+    .examples__title::after {
+        width: 54px;
+        bottom: -117px;
+        left: 0;
+    }
+    .examples__description {
+        font-size: 16px;
+        line-height: 26px;
+        // max-width: 282px;
+    }
+}
