@@ -30,7 +30,7 @@
     "gulp-sass": "^4.0.2",
     "imagemin-webp": "^5.1.0",
     "node-normalize-scss": "^8.0.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {}
 }
